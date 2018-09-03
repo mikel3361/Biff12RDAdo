@@ -1,0 +1,23 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "cBiff12RDSheet"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Option Explicit
+
+Private m_sSheetName   As String
+
+Public Property Get SheetName() As String
+    SheetName = m_sSheetName
+End Property
+Public Property Let SheetName(NewVal As String)
+    m_sSheetName = NewVal
+End Property
